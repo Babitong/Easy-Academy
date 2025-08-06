@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog | Easy Academy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/courselist.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="branding">
+            <a href="index.html">
+                <!-- <img src="images/easy-academy-logo.png" alt="Easy Academy Logo" class="logo"> -->
+                <h1>Easy Academy</h1>
+            </a>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="dashboard.html">My Dashboard</a></li>
+                <li><a href="course_list.html" class="active">Courses</a></li>
+                <li><a href="pastpapers.html">Resources</a></li>
+                <li><a href="contact.html">Support</a></li>
+            </ul>
+        </nav>
+        
+        <div class="user-profile">
+            <span class="username">Welcome, Student</span>
+            <a href="dashboard.html" class="profile-link">Profile</a>
+            <a href="index.html" class="logout-link">Logout</a>
+        </div>
+    </header>
+
+    <main class="course-catalog">
+        <section class="search-section">
+            <h2>Find Your Perfect Course</h2>
+            <form class="course-search">
+                <input type="search" placeholder="Search courses..." aria-label="Search courses">
+                <button type="submit">Search</button>
+                
+                <div class="filters">
+                    <select aria-label="Filter by subject">
+                        <option value="">All Subjects</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="language">Languages</option>
+                        <option value="history">History</option>
+                    </select>
+                    
+                    <select aria-label="Filter by level">
+                        <option value="">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+
+        <section class="featured-courses">
+            <h2>Featured Courses</h2>
+            <div class="course-grid">
+                <article class="course-card">
+                    <img src="images/math-basics.jpg" alt="Mathematics Basics Course">
+                    <div class="course-content">
+                        <span class="course-level beginner">Beginner</span>
+                        <h3>Mathematics Basics</h3>
+                        <p class="course-description">Master fundamental math concepts from arithmetic to basic algebra.</p>
+                        <div class="course-meta">
+                            <span class="duration">15 Lessons</span>
+                            <span class="instructor">Prof. Alan Turing</span>
+                        </div>
+                        <a href="course_detail.html" class="view-course">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/science-experiments.jpg" alt="Science Experiments Course">
+                    <div class="course-content">
+                        <span class="course-level intermediate">Intermediate</span>
+                        <h3>Science Experiments</h3>
+                        <p class="course-description">Hands-on experiments to understand core scientific principles.</p>
+                        <div class="course-meta">
+                            <span class="duration">20 Lessons</span>
+                            <span class="instructor">Dr. Marie Curie</span>
+                        </div>
+                        <a href="course_detail.html" class="view-course">View Course</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="all-courses">
+            <h2>All Available Courses</h2>
+            <div class="course-grid">
+                <article class="course-card">
+                    <img src="images/english-101.jpg" alt="English 101 Course">
+                    <div class="course-content">
+                        <span class="course-level beginner">Beginner</span>
+                        <h3>English 101</h3>
+                        <p class="course-description">Build your English foundation with grammar and vocabulary basics.</p>
+                        <div class="course-meta">
+                            <span class="duration">10 Lessons</span>
+                            <span class="instructor">Prof. Jane Austen</span>
+                        </div>
+                        <a href="course_detail.html" class="view-course">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/world-history.jpg" alt="World History Course">
+                    <div class="course-content">
+                        <span class="course-level intermediate">Intermediate</span>
+                        <h3>World History</h3>
+                        <p class="course-description">Explore major events that shaped civilizations across the globe.</p>
+                        <div class="course-meta">
+                            <span class="duration">25 Lessons</span>
+                            <span class="instructor">Dr. Howard Zinn</span>
+                        </div>
+                        <a href="course_detail.html" class="view-course">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/geometry.jpg" alt="Geometry Course">
+                    <div class="course-content">
+                        <span class="course-level intermediate">Intermediate</span>
+                        <h3>Geometry</h3>
+                        <p class="course-description">Understand shapes, angles, and spatial relationships.</p>
+                        <div class="course-meta">
+                            <span class="duration">18 Lessons</span>
+                            <span class="instructor">Prof. Euclid</span>
+                        </div>
+                        <a href="course_detail.html" class="view-course">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/chemistry.jpg" alt="Chemistry Course">
+                    <div class="course-content">
+                        <span class="course-level advanced">Advanced</span>
+                        <h3>Chemistry</h3>
+                        <p class="course-description">Study matter, its properties, and how substances interact.</p>
+                        <div class="course-meta">
+                            <span class="duration">30 Lessons</span>
+                            <span class="instructor">Dr. Linus Pauling</span>
+                        </div>
+                        <a href="course_detail.html" class="view-course">View Course</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Easy Academy</h3>
+                <p>Making learning accessible to everyone.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course_list.html">Courses</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Easy Academy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

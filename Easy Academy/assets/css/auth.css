@@ -1,0 +1,154 @@
+/* ==== AUTH PAGES === */
+.auth-page{
+    /* background: url('../images/download\ \(2\).jpeg') no-repeat center center; */
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.auth-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.auth-hero{
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.auth-hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.auth-hero p{
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.auth-form{
+    padding: 4rem;
+}
+.auth-form h2{
+    font-size: 2rem;
+    margin-bottom:2rem ;
+    color: #2c3e50;
+}
+.form-group{
+    margin-bottom: 1.5rem;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+.form-group input{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius:4px ;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+.form-group input:focus{
+    border-color: #3498db;
+    outline: none;
+}
+.forget-password{
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #3498db;
+
+}
+
+.btn-auth{
+    width: 100%;
+    background: #3498db;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-auth:hover{
+    background: #2980b9;
+}
+.auth-alt{
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+}
+
+/* === SOCAIL LOGIN === */
+.socail-login{
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+.socail-login::before{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-bottom: 1.5rem;
+}
+.socail-login p{
+    margin-bottom: 1rem;
+    color: #666;
+}
+.socail-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.socail-btn{
+    /* padding: 1rem; */
+    /* border-radius: 4px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 20px;
+    height: 40px;
+    transition: all 0.3s;
+}
+
+
+
+.socail-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* ==== RESPONSIVENESS ==== */
+@media (max-width: 900px){
+    .auth-container{
+        grid-template-columns: 1fr;
+    }
+    .auth-hero{
+        padding: 2rem;
+        text-align: center;
+    }
+    .auth-form{
+        padding: 2rem;
+    }
+    
+}
+
+@media ( max-width: 480px){
+    .auth-page{
+        padding: 1rem;
+    }
+}

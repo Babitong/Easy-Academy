@@ -1,0 +1,481 @@
+
+/* Course Detail Specific Styles */
+.course-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Course Hero Section */
+.course-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.course-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-level {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.course-level.beginner {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.course-header h1 {
+    font-size: 2.2rem;
+    margin: 0.5rem 0;
+    color: #2c3e50;
+}
+
+.course-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.course-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.instructor-icon {
+    background-image: url('../images/icons/instructor.svg');
+}
+
+.duration-icon {
+    background-image: url('../images/icons/clock.svg');
+}
+
+.students-icon {
+    background-image: url('../images/icons/users.svg');
+}
+
+.enrollment-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.enroll-button, .wishlist-button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enroll-button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.enroll-button:hover {
+    background-color: #27ae60;
+}
+
+.wishlist-button {
+    background-color: white;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+.wishlist-button:hover {
+    background-color: #f0f8ff;
+}
+
+/* Course Content Layout */
+.course-content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* Tabs Navigation */
+.tabs-nav {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+.tabs-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs-nav li {
+    margin-right: 1.5rem;
+}
+
+.tabs-nav a {
+    display: block;
+    padding: 0.8rem 0;
+    color: #555;
+    font-weight: 600;
+    position: relative;
+}
+
+.tabs-nav li.active a {
+    color: #3498db;
+}
+
+.tabs-nav li.active a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #3498db;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tab-content h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-top: 1.5rem;
+}
+
+.learning-objectives, .requirements-list {
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.learning-objectives li, .requirements-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Curriculum Accordion */
+.accordion {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: none;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.
+}
+
+
+
+
+/* Responsive Course Detail Styles */
+@media screen and (max-width: 768px) {
+    .course-hero {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .course-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .course-meta {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .course-content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .tabs-nav ul {
+        flex-wrap: wrap;
+    }
+    
+    .tabs-nav li {
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .instructor-profile {
+        flex-direction: column;
+    }
+    
+    .instructor-photo {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .branding {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-nav li {
+        margin: 0.5rem 0;
+    }
+    
+    .user-profile {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    
+    .course-hero {
+        margin-bottom: 1.5rem;
+    }
+    
+    .enrollment-box {
+        padding: 1rem;
+    }
+    
+    .price {
+        font-size: 1.5rem;
+    }
+    
+    .accordion-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .sidebar-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .social-share {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Existing styles with enhanced responsive elements */
+.course-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.course-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.course-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    aspect-ratio: 16/9;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ... (rest of your existing CSS) ... */
+
+/* Enhanced Accordion for Mobile */
+.accordion-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1000px; /* Adjust based on content */
+}
+
+/* Touch-friendly elements */
+.enroll-button, .wishlist-button {
+    min-height: 44px; /* Minimum touch target size */
+}
+
+.tabs-nav a {
+    padding: 12px 0; /* Larger touch area */
+}
+
+/* Fluid typography */
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Viewport units for scalable components */
+.course-hero {
+    min-height: 50vh;
+    max-height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .course-hero {
+        min-height: auto;
+        max-height: none;
+    }
+}
+
+/* Flexible grid for course features */
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive tables (if any) */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+/* Mobile-first social share */
+.social-share {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.social-icon {
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+/* Footer responsiveness */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}

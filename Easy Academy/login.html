@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- ===== NAVIGATION BAR ====== -->
+    <header class="navbar">
+       
+            
+            <nav class="navbar">
+                 <div class="container1" >
+                    <a href="index.html" class="logo">
+                        <span>Easy</span>Academy
+                    </a>
+                     <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                     <label for="menu-toggle" class="hamburger">
+                        <style>
+                            .hamburger img:hover{
+                               transition:  background 5s;
+                               background: white;
+                            }
+                        </style>
+                        <img src="assets/images/menu-bar.png" alt="menu" width="50px">
+                     </label>
+                 
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course_list.html">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="pastpapers.html">Past Papers</a></li>
+                </ul>
+
+                </div>
+            </nav>
+    </header>
+
+    <section  class="auth-page">
+        <div class="auth-container">
+
+        <div class="auth-hero">
+            <h1>Welcome Back</h1>
+            <p>Continue your learning journey with Easy Academy</p>
+        </div>
+
+        <form action="/login" method="post" class="auth-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email"  name="email" placeholder="rexmakia@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Email</label>
+                <input type="password" id="password" required placeholder="........">
+                <a href="#" class="forget-password">Forget Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-auth">Sign In</button>
+            <div class="socail-login">
+                <p>Or sign in with</p>
+                <div class="socail-buttons">
+                    <a href="#" class="socail-btn google " title="Google">
+                       <img src="assets/images/google.png" alt="google" width="">
+ 
+                    </a>
+
+                     <a href="#" class="socail-btn github " title="github">
+                    <img src="assets/images/github.png" alt="github" width="">
+                    </a>
+
+                    <a href="#" class="socail-btn facebook " title="Facebook">
+                    <img src="assets/images/facebook.png" alt="facebook" width="">
+                    </a>
+
+                </div>
+            </div>
+            <div class="auth-alt">
+                <p>Don't have an account?<a href="register.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+    
+    </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <title>My Dashboard | Easy Academy</title>
+</head>
+<body class="dashboard">
+    <header class="navbar">
+       
+            
+            <nav class="navbar">
+                 <div class="container1" >
+                    <a href="index.html" class="logo">
+                        <span>Easy</span>Academy
+                    </a>
+                     <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                     <label for="menu-toggle" class="hamburger">
+                        <style>
+                            .hamburger img:hover{
+                                background: white;
+                            }
+                        </style>
+                        <img src="assets/images/menu-bar.png" alt="menu" width="50px">
+                    </label>
+                 
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course_list.html">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="pastpapers.html">Past Papers</a></li>
+                </ul>
+
+                </div>
+            </nav>
+    </header>
+
+    
+    <!-- DASHBOARD LAYOUT -->
+     <div class="dashboard-container">
+        <!-- Sidebar -->
+         <aside class="sidebar">
+            <div class="user-profile">
+                <img src="assets/images/facebook.png" alt="user profile" class="avatar" width="100px">
+                <h3>Rex solomon</h3>
+                <p>Student</p>
+            </div>
+
+            <nav class="dashboard-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="course_list.html">
+                            <i class="fas fa-book-open"></i>
+                            <span>My Courses</span>
+                        </a>
+                    </li>
+
+                    <li>
+                         <a href="#">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Progress</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificates</span>
+                        </a>
+                    </li>
+                    <li>
+                         <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+         </aside>
+
+         <!-- Main Content -->
+          <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <button class="btn-notification">
+                        <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                    </button>
+
+                    <button class="btn-logout" >
+                        <i class="fas fa-sign-out-alt"> </i>
+                    </button>
+                    
+                </div>
+            </header>
+
+            <!-- Dashboard Widgets -->
+             <section class="widgets-grid">
+                <!-- Welcome card -->
+                 <div class="widget welcome-card">
+                    <h2>Welcome back, John!</h2>
+                        <p>Continue your learning journey. You have 3 courses in progress.</p>
+                        <a href="course_list.html" class="btn btn-primary">Resume Learning</a>
+                 </div>
+
+                 <!-- progress card -->
+                  <div class="widget progress-card">
+                    <h3>Your Progress</h3>
+                    <div class="progress-item">
+                        <h4>Web Development</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style = "width: 65%";> </div>
+                            
+                        </div>
+                        <span>65% Complete</span>
+
+                    </div>
+                    <div class="progress-item"><h4>Python Fundamentals</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%;"></div>
+                        </div>
+                        <span>30% Complete</span>
+                    </div>
+                  </div>
+
+                  <!-- Active Courses -->
+                   <div class="widget courses-card">
+                    <div class="widget-header">
+                        <h3>Active Courses</h3>
+                        <a href="course_list.html" class="view-all"></a>
+                    </div>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <img src="assets/images/download (2).png" alt="web development">
+                            <div class="course-info">
+                                <h4>Web Development Bootcamp</h4>
+                                <p>Last accessed: 2 days ago</p>
+                                <a href="lesson_view.html" class="btn-continue">Continue</a>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+
+                   <!-- Quick Actions -->
+                    <div class="widget actions-card">
+                        <h3>Quick Acctions</h3>
+                        <div class="action-buttons">
+                            <a href="pastpapers.html" class="action-btn">
+                                <i class="fas fa-book"></i>
+                                <span>pastpapers</span>
+                            </a>
+
+                            <a href="course_detail.html" class="action-btn">
+                                <i class="fas fa-calender"></i>
+                                <span>Schdule</span>
+                            </a>
+                            <a href="contact.html" class="action-btn">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help</span>
+                            </a>
+                        </div>
+                    </div>
+             </section>
+          </main>
+     </div>
+</body>
+</html>

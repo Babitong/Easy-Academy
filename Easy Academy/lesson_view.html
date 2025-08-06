@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Title | Easy Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --accent-color: #4fc3f7;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --success-color: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: var(--dark-color);
+        }
+        
+        .lesson-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .lesson-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .lesson-title {
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+        
+        .lesson-progress {
+            background: #e9ecef;
+            border-radius: 20px;
+            height: 10px;
+            width: 100%;
+            margin: 15px 0;
+        }
+        
+        .progress-bar {
+            background: var(--success-color);
+            height: 100%;
+            border-radius: 20px;
+            width: 70%; /* Dynamic based on user progress */
+        }
+        
+        .lesson-content {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .video-container {
+            flex: 2;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+        
+        .lesson-sidebar {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .lesson-notes {
+            margin-top: 20px;
+        }
+        
+        .notes-textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .lesson-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: var(--light-color);
+            color: var(--dark-color);
+            border: 1px solid #ddd;
+        }
+        
+        .resources-section {
+            margin-top: 30px;
+        }
+        
+        .resource-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .resource-icon {
+            font-size: 20px;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="lesson-container">
+        <div class="lesson-header">
+            <h1 class="lesson-title">Introduction to Algebra</h1>
+            <span><i class="fas fa-bookmark"></i> Save</span>
+        </div>
+        
+        <div class="lesson-progress">
+            <div class="progress-bar"></div>
+        </div>
+        
+        <div class="lesson-content">
+            <div class="video-container">
+                <video controls poster="https://via.placeholder.com/800x450">
+                    <source src="lesson-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="lesson-sidebar">
+                <h3>Lesson Materials</h3>
+                <ul>
+                    <li><i class="fas fa-file-pdf"></i> <a href="#">Download Slides (PDF)</a></li>
+                    <li><i class="fas fa-link"></i> <a href="#">Additional Resources</a></li>
+                </ul>
+                
+                <h3>Quick Quiz</h3>
+                <p>Test your understanding with a short quiz.</p>
+                <button class="btn btn-primary">Start Quiz</button>
+            </div>
+        </div>
+        
+        <div class="lesson-notes">
+            <h3>My Notes</h3>
+            <textarea class="notes-textarea" placeholder="Write your notes here..."></textarea>
+        </div>
+        
+        <div class="lesson-actions">
+            <button class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Previous Lesson</button>
+            <button class="btn btn-primary">Next Lesson <i class="fas fa-arrow-right"></i></button>
+        </div>
+        
+        <div class="resources-section">
+            <h3>Related Resources</h3>
+            <div class="resource-card">
+                <i class="fas fa-file-pdf resource-icon"></i>
+                <div>
+                    <h4>Algebra Basics Cheat Sheet</h4>
+                    <p>PDF • 2.4 MB</p>
+                </div>
+            </div>
+            <div class="resource-card">
+                <i class="fas fa-link resource-icon"></i>
+                <div>
+                    <h4>Khan Academy Algebra Course</h4>
+                    <p>External Link</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
